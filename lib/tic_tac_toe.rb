@@ -1,5 +1,5 @@
 class TicTacToe
-  
+
   def initialize(board = nil)
     @board = board || Array.new(9, " ")
   end
@@ -24,7 +24,7 @@ class TicTacToe
   end
 
   def input_to_index
-
+    index = move.to_i - 1
   end
 
   def move
