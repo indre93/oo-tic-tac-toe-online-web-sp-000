@@ -104,12 +104,11 @@ class TicTacToe
    until over?
     puts turn
    end
-    if winner == "X"
-     puts "Congratulations X!"
-    else
-     puts "Congratulations O!"
+    if won?
+     puts "Congratulations #{winner}!"
+   else draw?
+     puts "Cat's game!"
     end
-   puts "Cat's Game!"
   end
 
 end
