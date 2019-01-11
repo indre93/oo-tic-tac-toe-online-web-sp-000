@@ -68,9 +68,7 @@ class TicTacToe
      else
       puts "try again"
      turn
-     display_board
      end
-    display_board
   end
 
   def won?
@@ -103,10 +101,10 @@ class TicTacToe
   end
 
   def play
-   until over?(board)
-    puts turn(board)
+   until over?
+    puts turn
    end
-    if winner(board) == "X"
+    if winner == "X"
      puts "Congratulations X!"
     else
      puts "Congratulations O!"
