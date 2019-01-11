@@ -90,11 +90,15 @@ class TicTacToe
   end
 
   def over?
-
+    won? || draw?
   end
 
   def winner
-
+    win_combination = won?
+    if win_combination
+      token = win_combination[0]
+      @board[token]
+    end
   end
 
 end
