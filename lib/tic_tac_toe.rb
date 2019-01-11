@@ -68,6 +68,7 @@ class TicTacToe
      else
       puts "try again"
      turn
+     display_board
      end
     display_board
   end
