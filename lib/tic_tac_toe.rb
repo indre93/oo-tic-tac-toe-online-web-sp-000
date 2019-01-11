@@ -1,4 +1,5 @@
 class TicTacToe
+  
   def initialize(board = nil)
     @board = board || Array.new(9, " ")
   end
@@ -37,7 +38,7 @@ class TicTacToe
   def valid_move?
 
   end
-  
+
   def turn_count
     @board.count{|token| token == "X" || token == "O"}
   end
@@ -46,7 +47,7 @@ class TicTacToe
     turn_count % 2 == 0 ? "X" : "O"
   end
 
-  def turn 
+  def turn
 
   end
 
@@ -69,5 +70,5 @@ class TicTacToe
   def winner
 
   end
-  
+
 end
