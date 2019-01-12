@@ -101,7 +101,7 @@ class TicTacToe
   end
 
   def play
-   until over?
+   while over?
     puts turn
    end
     if won?
